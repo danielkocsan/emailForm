@@ -1,0 +1,116 @@
+body {
+    color: #4e4e4e;
+    font-family: arial;
+    font-size: 12px;
+}
+
+#email-form {
+    width: 720px;
+    margin: 16px;
+    padding: 0 0 16px 0;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    background-color: #f6f6f6;
+}
+
+#email-form > h2 {
+    margin: 0;
+    padding: 0 10px;
+    line-height: 35px;
+    background-color: #ebebeb;
+    font-family: verdana;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#email-form .text{
+    padding: 0 5px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    width: 200px;
+    height: 25px;
+    line-height: 25px;
+}
+
+#email-form .text:hover,
+#email-form .text:focus {
+    border-color: #61a5cc;
+}
+
+#email-form .text:focus {
+    background-color: #fffdd7;
+    outline: none;
+}
+
+#email-submit {
+    margin: 8px 0 0 210px;
+    padding: 0 12px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid #0087db;
+    border-radius: 3px;
+    color: white;
+    line-height: 16px;
+    font-weight: normal;
+    background-image: linear-gradient(top, rgb(96,202,255) 0%, rgb(5,149,238) 100%);
+    background-image: -o-linear-gradient(top, rgb(96,202,255) 0%, rgb(5,149,238) 100%);
+    background-image: -moz-linear-gradient(top, rgb(96,202,255) 0%, rgb(5,149,238) 100%);
+    background-image: -webkit-linear-gradient(top, rgb(96,202,255) 0%, rgb(5,149,238) 100%);
+    background-image: -ms-linear-gradient(top, rgb(96,202,255) 0%, rgb(5,149,238) 100%);
+}
+
+
+form.pending #email-submit {
+    background-image: url('assets/spinner.gif');
+    background-position: center 2px;
+    background-repeat: no-repeat;
+    border-color: #db8b00;
+    background-color: #ffd441;
+    text-indent: -9999px;
+    width: 67px;
+}
+
+form .row {
+    display: block;
+    clear: both;
+    line-height: 41px;
+    position: relative;
+}
+
+form label {
+    width: 195px;
+    display: block;
+    float: left;
+    margin-right: 14px;
+    text-align: right;
+}
+
+form .error-message {
+    display: none;
+}
+
+form .error-message.active {
+    display: block;
+    position: absolute;
+    left: 440px;
+    top: 7px;
+    width: 200px;
+    padding: 0 5px;
+    line-height: 25px;
+    height: 25px;
+    background-color: #f9eff0;
+    border: 1px solid #cc0000;
+    color: #cc0000;
+}
+form .error-message:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: -8px;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-right: 8px solid #cc0000;
+}
